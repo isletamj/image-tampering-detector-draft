@@ -2,12 +2,12 @@
 const CACHE_NAME = 'my-cache-v1';
 let urlsToCache = [
     "/",
-    "/index.html",
-    "/src/master.css",
-    "/src/index.js",
-    "/images/camera128.png",
-    "/images/camera256.png",
-    "/images/camera512.png"
+    "./index.html",
+    "./src/master.css",
+    "./src/index.js",
+    "./images/camera128.png",
+    "./images/camera256.png",
+    "./images/camera512.png"
     ];
 
 self.addEventListener('install', function(event) {
