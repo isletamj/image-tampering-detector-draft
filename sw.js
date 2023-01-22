@@ -1,7 +1,7 @@
 // Perform install steps
 const CACHE_NAME = 'my-cache-v1';
 let urlsToCache = [
-    "/",
+    "./",
     "./index.html",
     "./src/master.css",
     "./src/index.js",
