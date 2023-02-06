@@ -1,9 +1,21 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Index Page</title>
+    <title>Image Tampering Detector</title>
 {% endblock %}
 
 {% block body %}
-<h1>Hello World</h1>
+    <div class="container home">
+        <h1 class="text-center fw-bold">Image Tampering Detector</h1>
+        <p class="text-center">This image tampering detector uses deep learning using CASIA Dataset in order to classify images that are tampered using software tools</p>
+        <div class="image-container rounded-7">
+            
+        </div>
+        <div class="submit-upload mt-3">
+            <form class="d-flex flex-row">
+                <input class="form-control me-2" type="file" accept="image/jpeg, image/tiff" id="formFileMultiple" multiple />
+                <button type="button" class="btn btn-dark">Detect</button>
+            </form>
+        </div>
+    </div>
 {% endblock %}
