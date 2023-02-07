@@ -9,11 +9,11 @@
         <h1 class="text-center fw-bold">Image Tampering Detector</h1>
         <p class="text-center">This image tampering detector uses deep learning using CASIA Dataset in order to classify images that are tampered using software tools</p>
         <div class="image-container rounded-7">
-            
+            <img src="" alt="" id="uploadPreview" class="rounded-7">
         </div>
         <div class="submit-upload mt-3">
             <form class="d-flex flex-row">
-                <input class="form-control me-2" type="file" accept="image/jpeg, image/tiff" id="formFileMultiple" multiple />
+                <input class="form-control me-2" type="file" accept="image/jpeg, image/tiff" id="formFile" onchange="PreviewImage()"/>
                 <button type="button" class="btn btn-dark">Detect</button>
             </form>
         </div>
